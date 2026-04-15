@@ -1,0 +1,12 @@
+{
+  "industry": "lawyer",
+  "projectTypes": [
+    {
+      "type": "litigation-bundle",
+      "keywords": ["诉讼", "争议", "出庭"],
+      "minTeam": [{ "role": "pm", "optional": true }],
+      "workflow": ["pm"],
+      "description": "法律行业占位模板，请按实际岗位扩展 skill-templates"
+    }
+  ]
+}

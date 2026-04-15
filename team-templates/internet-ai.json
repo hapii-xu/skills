@@ -1,0 +1,53 @@
+{
+  "industry": "internet-ai",
+  "projectTypes": [
+    {
+      "type": "simple-frontend",
+      "keywords": ["小游戏", "纯前端", "单页", "Landing Page", "静态站", "H5", "贪吃蛇"],
+      "minTeam": [
+        { "role": "pm", "optional": true },
+        { "role": "frontend", "required": true }
+      ],
+      "workflow": ["pm", "frontend"],
+      "description": "纯前端项目，无后端依赖"
+    },
+    {
+      "type": "standard-webapp",
+      "keywords": ["Web应用", "管理后台", "CRUD", "SaaS", "仪表板", "前后端"],
+      "minTeam": [
+        { "role": "pm", "required": true },
+        { "role": "frontend", "required": true },
+        { "role": "backend", "required": true },
+        { "role": "tester", "optional": true }
+      ],
+      "workflow": ["pm", "frontend", "backend", "tester"],
+      "collabPairs": [
+        { "from": "frontend", "to": "backend", "interface": "API 契约" },
+        { "from": "pm", "to": "frontend", "interface": "需求文档" },
+        { "from": "pm", "to": "backend", "interface": "需求文档" }
+      ],
+      "description": "标准前后端分离 Web 应用"
+    },
+    {
+      "type": "api-service",
+      "keywords": ["API", "微服务", "后端服务", "无前端", "REST"],
+      "minTeam": [
+        { "role": "pm", "optional": true },
+        { "role": "backend", "required": true }
+      ],
+      "workflow": ["pm", "backend"],
+      "description": "纯后端 API/微服务"
+    },
+    {
+      "type": "ai-application",
+      "keywords": ["AI Agent", "LLM", "RAG", "对话机器人", "AIGC", "大模型"],
+      "minTeam": [
+        { "role": "pm", "required": true },
+        { "role": "backend", "required": true },
+        { "role": "frontend", "optional": true }
+      ],
+      "workflow": ["pm", "backend", "frontend"],
+      "description": "AI/LLM 应用"
+    }
+  ]
+}

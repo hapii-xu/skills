@@ -1,0 +1,12 @@
+{
+  "industry": "teacher",
+  "projectTypes": [
+    {
+      "type": "course-design",
+      "keywords": ["课程", "教案", "教学"],
+      "minTeam": [{ "role": "pm", "optional": true }],
+      "workflow": ["pm"],
+      "description": "教育行业占位模板，请按实际岗位扩展 skill-templates"
+    }
+  ]
+}
