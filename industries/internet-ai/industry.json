@@ -1,0 +1,64 @@
+{
+  "slug": "internet-ai",
+  "name": "Internet / AI",
+  "nameZh": "互联网 / AI",
+  "description": "Software development, web applications, AI products, mobile apps, SaaS platforms",
+  "icon": "code",
+  "version": "2.0.0",
+  "supportedRoles": [
+    {
+      "role": "frontend-engineer",
+      "position": "Frontend Development Engineer",
+      "positionZh": "前端开发工程师",
+      "required": false
+    },
+    {
+      "role": "backend-engineer",
+      "position": "Backend Development Engineer",
+      "positionZh": "后端开发工程师",
+      "required": false
+    },
+    {
+      "role": "pm",
+      "position": "Product Manager",
+      "positionZh": "产品经理",
+      "required": false
+    },
+    {
+      "role": "tester",
+      "position": "Test Engineer",
+      "positionZh": "测试工程师",
+      "required": false
+    },
+    {
+      "role": "designer",
+      "position": "UI/UX Designer",
+      "positionZh": "UI/UX 设计师",
+      "required": false
+    },
+    {
+      "role": "devops",
+      "position": "DevOps Engineer",
+      "positionZh": "DevOps 工程师",
+      "required": false
+    },
+    {
+      "role": "assistant",
+      "position": "Project Assistant",
+      "positionZh": "项目助手",
+      "required": true
+    },
+    {
+      "role": "developer",
+      "position": "Software Architect",
+      "positionZh": "软件架构师",
+      "required": false
+    },
+    {
+      "role": "fullstack-engineer",
+      "position": "Fullstack Engineer",
+      "positionZh": "全栈工程师",
+      "required": false
+    }
+  ]
+}

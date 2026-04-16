@@ -1,0 +1,71 @@
+{
+  "pm": {
+    "dependsOn": [],
+    "provides": [
+      { "to": "frontend", "output": "PRD / 用户故事 / 验收标准" },
+      { "to": "backend", "output": "PRD / 业务规则 / 接口需求说明" },
+      { "to": "tester", "output": "验收标准与测试范围" }
+    ]
+  },
+  "frontend": {
+    "dependsOn": [
+      { "role": "pm", "expects": "需求文档 / PRD" },
+      { "role": "backend", "expects": "API 接口文档与契约" },
+      { "role": "designer", "expects": "设计稿 / UI 规范" }
+    ],
+    "provides": [
+      { "to": "tester", "output": "可测试的前端页面与交互" },
+      { "to": "backend", "output": "前端所需接口与字段列表" }
+    ]
+  },
+  "backend": {
+    "dependsOn": [
+      { "role": "pm", "expects": "需求文档 / PRD" },
+      { "role": "frontend", "expects": "调用场景与数据展示需求" }
+    ],
+    "provides": [
+      { "to": "frontend", "output": "API 文档与错误码约定" },
+      { "to": "tester", "output": "可测接口与环境说明" },
+      { "to": "devops", "output": "部署与依赖说明" }
+    ]
+  },
+  "tester": {
+    "dependsOn": [
+      { "role": "pm", "expects": "验收标准" },
+      { "role": "frontend", "expects": "可测构建或访问方式" },
+      { "role": "backend", "expects": "接口与环境" }
+    ],
+    "provides": [
+      { "to": "frontend", "output": "缺陷与复现步骤" },
+      { "to": "backend", "output": "缺陷与复现步骤" }
+    ]
+  },
+  "designer": {
+    "dependsOn": [{ "role": "pm", "expects": "产品目标与约束" }],
+    "provides": [
+      { "to": "frontend", "output": "视觉稿与交互说明" }
+    ]
+  },
+  "devops": {
+    "dependsOn": [
+      { "role": "backend", "expects": "运行环境与依赖" },
+      { "role": "frontend", "expects": "构建与静态资源说明" }
+    ],
+    "provides": [{ "to": "backend", "output": "流水线与部署配置" }]
+  },
+  "developer": {
+    "dependsOn": [{ "role": "pm", "expects": "PRD / 需求说明" }],
+    "provides": [
+      { "to": "frontend", "output": "技术方案、模块边界与接口建议" },
+      { "to": "backend", "output": "技术方案、模块边界与接口建议" }
+    ]
+  },
+  "assistant": {
+    "dependsOn": [],
+    "provides": [
+      { "to": "pm", "output": "项目目标与范围澄清" },
+      { "to": "frontend", "output": "任务分派与优先级" },
+      { "to": "backend", "output": "任务分派与优先级" }
+    ]
+  }
+}

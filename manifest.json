@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "2.0.0",
+  "lastUpdated": "2026-04-16",
+  "industries": {
+    "internet-ai": {
+      "version": "2.0.0",
+      "roles": ["frontend-engineer", "backend-engineer", "pm", "tester", "designer", "devops", "assistant", "developer", "fullstack-engineer"],
+      "extensions": ["api-design", "code-review", "database-design", "performance-optimization", "security-audit", "testing-strategy"]
+    }
+  }
+}
